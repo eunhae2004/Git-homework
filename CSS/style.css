@@ -15,13 +15,15 @@
   --color-accent: var(--color-blue);
   --color-accent-variant: var(--color-orange);
   --color-text: var(--color-white);
+  --color-background: var(--color-ivory);
 
   /* colors */
   --color-white: #fff;
-  --color-black: #050a13;
-  --color-blue: #03e8f9;
-  --color-orange: #fd6413;
-  --color-gray: #1b1e26;
+  --color-black: #455054;
+  --color-blue: #d45769;
+  --color-orange: #e69d45;
+  --color-gray: #308695;
+  --color-ivory: #e6e5e5;
 
   /* size */
   --size-max-width: 1200px;
@@ -34,6 +36,7 @@
 body {
   font-family: "Pretendard-Regular";
   margin: 0;
+  background-color: var(--color-background);
 }
 
 h1,
@@ -68,6 +71,7 @@ button:focus {
   margin: auto;
 }
 .title {
+  color: #d45769;
   font-size: 2.5rem;
   margin: 1rem 0;
 }
@@ -117,7 +121,7 @@ button:focus {
 
 /* Home */
 #Home {
-  background-color: var(--color-primary);
+  background: linear-gradient(var(--color-primary) 90%, rgba(0, 0, 0, 0));
   color: var(--color-text);
   padding: 7rem 1rem 5rem;
   text-align: center;
@@ -129,6 +133,22 @@ button:focus {
   border-radius: 100%;
   border: 3px solid var(--color-accent);
   object-fit: cover; /* 이미지가 부모 요소의 크기에 맞춰 비율을 유지하며 꽉 차도록 설정 */
+  animation: flow 5s infinite ease-in-out;
+}
+
+@keyframes flow {
+  0% {
+    transform: translateY(0);
+    box-shadow: 0 0 10px rgba(255, 136, 136, 0.342);
+  }
+  50% {
+    transform: translateY(-20px);
+    box-shadow: 0 0 20px rgba(255, 77, 77, 0.884);
+  }
+  100% {
+    transform: translateY(0);
+    box-shadow: 0 0 10px rgba(221, 98, 98, 0.527);
+  }
 }
 
 .home__title {
@@ -160,13 +180,34 @@ button:focus {
 }
 
 /* about */
-.skills {
+
+#About {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#About > p {
+  text-align: left;
+  margin: 50px;
+  width: 60%;
+}
+
+#infoF {
+  font-size: 3rem;
+  font-weight: bolder;
+  font-style: italic;
+  color: var(--color-blue);
+}
+
+.skills {
   justify-content: space-between;
   gap: 1rem;
   margin: 2.5rem 0;
 }
 .skill {
+  width: 100%;
+  margin-bottom: 20px;
   background-color: var(--color-primary-variant);
   padding: 2rem 1rem;
   color: var(--color-text);
@@ -189,23 +230,33 @@ button:focus {
   font-weight: bold;
   margin: 1rem;
 }
+
+@media (max-width: 1200px) {
+  #About > p {
+    text-align: center;
+    margin: 50px;
+    width: 100%;
+  }
+}
+
 .jobs {
   /* 언어에 따라 시작위치를 다르게 설정 */
-  text-align: start;
-}
-.job {
   display: flex;
   align-items: center;
   gap: 8px;
+}
+.job {
+  margin: 0 auto;
   margin-bottom: 1rem;
 }
 
 .job__img {
   width: 300px;
-  height: 200px;
+  height: 300px;
 }
 
 .job__name {
+  margin: 0 auto;
   color: var(--color-primary);
 }
 .job__period {
@@ -215,7 +266,11 @@ button:focus {
 
 /* skills */
 #skills {
-  background-color: var(--color-primary-variant);
+  background: linear-gradient(
+    rgba(0, 0, 0, 0) 5%,
+    var(--color-primary-variant) 10% 95%,
+    rgba(0, 0, 0, 0)
+  );
   color: var(--color-text);
 }
 .tools {

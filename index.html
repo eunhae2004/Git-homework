@@ -48,12 +48,30 @@
       </div>
       <nav class="header__nav">
         <ul class="header__menu">
-          <li><a href="#Home" class="header__menu__item active">Home</a></li>
-          <li><a href="#About" class="header__menu__item">Eunhye</a></li>
-          <li><a href="#Skill" class="header__menu__item">Skill</a></li>
-          <li><a href="#Work" class="header__menu__item">Portfolio</a></li>
-          <li><a href="#Licence" class="header__menu__item">License</a></li>
-          <li><a href="#Contact" class="header__menu__item">Contect</a></li>
+          <li>
+            <a href="#Home" class="header__menu__item active">Home</a>
+          </li>
+          <li>
+            <a href="#About" class="header__menu__item">Eunhye</a>
+          </li>
+          <li>
+            <a href="#Skill" class="header__menu__item">Skill</a>
+          </li>
+          <li>
+            <a href="./pages/Portfolio.html" class="header__menu__item"
+              >Portfolio</a
+            >
+          </li>
+          <li>
+            <a href="./pages/License.html" class="header__menu__item"
+              >License</a
+            >
+          </li>
+          <li>
+            <a href="./pages/Contect.html" class="header__menu__item"
+              >Contect</a
+            >
+          </li>
         </ul>
       </nav>
     </header>
@@ -80,35 +98,51 @@
       </section>
       <!-- Home 끝 -->
 
-      <section id="#About" class="section max-container">
+      <section class="section max-container">
         <h2 class="title">은혜</h2>
-        <p class="description">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint
-          accusantium dolore quod, sapiente perspiciatis nam quibusdam ut quos,
-          vero quas maxime. Deleniti facere minus voluptate iste maiores animi
-          odit molestias.lo Lorem ipsum dolor sit amet, consectetur adipisicing
-          elit. Rerum, quia? Veritatis necessitatibus porro veniam, repellendus
-          tempore eum ratione a beatae mollitia iste molestiae natus voluptas
-          cum dolorum, libero illo vitae?
-        </p>
+        <div id="About">
+          <p class="description">
+            <!-- 안돼용! -->
+            <span id="infoF"> L </span>orem ipsum dolor, sit amet consectetur
+            adipisicing elit. Sint accusantium dolore quod, sapiente
+            perspiciatis nam quibusdam ut quos, vero quas maxime. Deleniti
+            facere minus voluptate iste maiores animi odit molestias.lo
+            <br /><br />
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum,
+            quia? Veritatis necessitatibus porro veniam, repellendus tempore eum
+            ratione a beatae mollitia iste molestiae natus voluptas cum dolorum,
+            libero illo vitae?
+            <br />
+            <br />
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae
+            similique vitae repudiandae. Saepe obcaecati, nihil aspernatur
+            itaque exercitationem dolore tempora deserunt similique veniam
+            eveniet, pariatur, minus necessitatibus in? Voluptas, et.
+            <br /><br />
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla
+            numquam ullam quaerat at amet error praesentium dolorem dolore?
+            Minus expedita est labore iure incidunt? Ipsa voluptates veritatis
+            magni voluptatibus neque.
+          </p>
 
-        <ul class="skills">
-          <li class="skill">
-            <i class="fa-brands fa-html5 skill__icon"></i>
-            <p class="skill__title">Front-end</p>
-            <p>HTML, CSS, JavaScript, Node.js, React</p>
-          </li>
-          <li class="skill">
-            <i class="fa-solid fa-mobile skill__icon"></i>
-            <p class="skill__title">Moblie</p>
-            <p>Android, IOS, Kotlin, React-Native</p>
-          </li>
-          <li class="skill">
-            <i class="fa-solid fa-rocket skill__icon"></i>
-            <p class="skill__title">AI</p>
-            <p>Tensorflow, Python, Rytorch, Numpy</p>
-          </li>
-        </ul>
+          <ul class="skills">
+            <li class="skill">
+              <i class="fa-brands fa-html5 skill__icon"></i>
+              <p class="skill__title">Front-end</p>
+              <p>HTML, CSS, JavaScript, Node.js, React</p>
+            </li>
+            <li class="skill">
+              <i class="fa-solid fa-mobile skill__icon"></i>
+              <p class="skill__title">Moblie</p>
+              <p>Android, IOS, Kotlin, React-Native</p>
+            </li>
+            <li class="skill">
+              <i class="fa-solid fa-rocket skill__icon"></i>
+              <p class="skill__title">AI</p>
+              <p>Tensorflow, Python, Rytorch, Numpy</p>
+            </li>
+          </ul>
+        </div>
 
         <ul class="jobs">
           <li class="job">
@@ -131,6 +165,7 @@
       <!-- skills 시작 -->
 
       <section id="skills" class="section">
+        <span id="Skill"></span>
         <div class="max-container">
           <h2 class="title">기술</h2>
           <p class="description">언어 및 도구</p>
@@ -214,145 +249,6 @@
         </div>
       </section>
       <!-- skills 끝 -->
-
-      <!-- work 시작 -->
-
-      <section class="work">
-        <h2>포트폴리오</h2>
-        <p>Projects</p>
-        <ul>
-          <li>
-            <button>ALL <span>10</span></button>
-          </li>
-          <li>
-            <button>Front-end <span>3</span></button>
-          </li>
-          <li>
-            <button>Mobile <span>3</span></button>
-          </li>
-          <li>
-            <button>AI <span>4</span></button>
-          </li>
-        </ul>
-
-        <ul>
-          <li>
-            <a href="#" target="_blank">
-              <img src="./images/Project.png" alt="Project image" />
-              <div>
-                <h3>Project #1</h3>
-                <p>티맵</p>
-              </div>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" target="_blank">
-              <img src="./images/Project.png" alt="Project image" />
-              <div>
-                <h3>Project #1</h3>
-                <p>티맵</p>
-              </div>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" target="_blank">
-              <img src="./images/Project.png" alt="Project image" />
-              <div>
-                <h3>Project #1</h3>
-                <p>티맵</p>
-              </div>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" target="_blank">
-              <img src="./images/Project.png" alt="Project image" />
-              <div>
-                <h3>Project #1</h3>
-                <p>티맵</p>
-              </div>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" target="_blank">
-              <img src="./images/Project.png" alt="Project image" />
-              <div>
-                <h3>Project #1</h3>
-                <p>티맵</p>
-              </div>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" target="_blank">
-              <img src="./images/Project.png" alt="Project image" />
-              <div>
-                <h3>Project #1</h3>
-                <p>티맵</p>
-              </div>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" target="_blank">
-              <img src="./images/Project.png" alt="Project image" />
-              <div>
-                <h3>Project #1</h3>
-                <p>티맵</p>
-              </div>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" target="_blank">
-              <img src="./images/Project.png" alt="Project image" />
-              <div>
-                <h3>Project #1</h3>
-                <p>티맵</p>
-              </div>
-            </a>
-          </li>
-        </ul>
-      </section>
-      <!-- work 끝 -->
-
-      <!-- license 시작 -->
-
-      <section id="license">
-        <h2>자격증</h2>
-        <p>국가 기술 자격증</p>
-        <ul>
-          <li>
-            <img src="./images/licenceCard.png" alt="정보처리기사 자격증" />
-            <div>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Expedita, nobis, provident qui possimus inventore iusto nulla
-                quae necessitatibus totam eligendi sed reprehenderit? Eum
-                deleniti unde debitis. Fugiat rem esse ex!
-              </p>
-              <p><a href="#">한국데이터산업진흥원</a></p>
-            </div>
-          </li>
-
-          <li>
-            <img src="./images/licenceCard.png" alt="ADSP 자격증" />
-            <div>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Expedita, nobis, provident qui possimus inventore iusto nulla
-                quae necessitatibus totam eligendi sed reprehenderit? Eum
-                deleniti unde debitis. Fugiat rem esse ex!
-              </p>
-              <p><a href="#">한국데이터산업진흥원</a></p>
-            </div>
-          </li>
-        </ul>
-      </section>
-      <!-- license 끝 -->
 
       <!-- Arrow Up -->
       <aside>
