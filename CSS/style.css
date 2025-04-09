@@ -534,6 +534,20 @@ button:focus {
     --size-max-width: 762px;
   }
 
+  .header {
+    flex-wrap: wrap;
+  }
+
+  .header__menu {
+    opacity: 0;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 0.8rem;
+  }
+
+  .header:hover {
+  }
+
   #About {
     display: block;
   }
