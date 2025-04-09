@@ -238,6 +238,7 @@ button:focus {
 .jobs {
   /* 언어에 따라 시작위치를 다르게 설정 */
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 8px;
 }
@@ -247,8 +248,8 @@ button:focus {
 }
 
 .job__img {
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
 }
 
 .job__name {
@@ -321,7 +322,7 @@ button:focus {
 /* work */
 
 #Work {
-  background-color: var(--color-primary);
+  background: linear-gradient(var(--color-primary) 90%, rgba(0, 0, 0, 0));
   color: var(--color-text);
 }
 .categories {
@@ -420,6 +421,12 @@ button:focus {
 }
 
 /* license */
+
+#License {
+  background: linear-gradient(var(--color-primary) 90%, rgba(0, 0, 0, 0));
+  color: var(--color-text);
+}
+
 .licenses {
   margin: 3rem;
 }
@@ -440,6 +447,8 @@ button:focus {
   padding: 1rem;
   border-radius: 8px;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 8px;
+  background-color: var(--color-background);
+  color: var(--color-primary);
 }
 
 .license__bubble__name {
@@ -470,7 +479,7 @@ button:focus {
 
 /* footer */
 #Contact {
-  background-color: var(--color-primary);
+  background: linear-gradient(var(--color-primary) 90%, rgba(0, 0, 0, 0));
   color: var(--color-text);
 }
 
@@ -494,13 +503,79 @@ button:focus {
   body {
   }
 
+  #About {
+    display: flex;
+  }
+
   #About > p {
     text-align: center;
-    margin: 50px;
+    margin: 0px;
     width: 100%;
+  }
+
+  .skills {
+    width: 100%;
+    display: flex;
+  }
+
+  .skill {
+    width: 30%;
+  }
+
+  .job__img {
+    width: 200px;
+    height: 200px;
   }
 }
 
 /* 모바일 */
 @media (max-width: 762px) {
+  :root {
+    --size-max-width: 762px;
+  }
+
+  #About {
+    display: block;
+  }
+
+  .description {
+    font-size: 1.2rem;
+    margin: 0rem 0;
+  }
+
+  /* About */
+  #About > p {
+    text-align: center;
+    margin: 0px;
+    width: 100%;
+  }
+
+  .skills {
+    width: 100%;
+    font-size: 90%;
+  }
+
+  .skill {
+    width: 100%;
+  }
+
+  .skill__icon {
+    font-size: 2rem;
+  }
+  .skill__title {
+    font-size: 1rem;
+  }
+
+  /* Job */
+
+  .job__img {
+    width: 120px;
+    height: 120px;
+  }
+
+  /* skills */
+  .tools {
+    display: block;
+    margin: 30px 0;
+  }
 }
